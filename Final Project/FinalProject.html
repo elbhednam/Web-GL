@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+  </head>
+
+    <body onload="main()">
+	
+    <canvas id="webgl" width="950" height="800" style="position: absolute; z-index: 0">
+      Please use a browser that supports "canvas"
+    </canvas>
+
+	<canvas id="hud" width="950" height="800" style="position: absolute; z-index: 1"></canvas>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br>
+	<p>
+	CONTROLS: <br>
+	WASD: Move sprite<br>
+	&uarr;&darr;: Move camera up/down<br>
+    &larr;&rarr;: Move camera left/right<br>
+	&plus;&minus;: Zoom in/out<br>
+	ZX: Open/Close door<br>
+	Space bar: Reset<br>
+	Lights:  <input id="lightLevel" type="range" min="-180" max="180" step="1" value="0" onchange="setLights(this.value)" value="100" />
+	</p>
+	
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+	<script src="ModelCollection.js"></script>
+	<script src="util_Library.js"></script>
+    <script src="FinalProject.js"></script>
+  </body>
+</html>
